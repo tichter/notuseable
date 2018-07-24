@@ -27,12 +27,6 @@ div.ui-content {
       margin-left: 25%;
       margin: 0px auto; } }
 
-.menu {
-  margin: 0 !important; }
-
-.inner-collapsible {
-  margin: 0px !important; }
-
 .mushra-container {
   text-align: center; }
 
@@ -97,15 +91,6 @@ div.ui-content {
 .mushra-table-short .right-label {
   text-align: right;
   color: #19CCAA; }
-
-
-.soundboard-container {
-  text-align: center;
-  margin: 0px auto;
-  display: table;
-  list-style: none;
-  padding-left: 0;
-  overflow: hidden; }
 
 #submit-container {
   text-align: center;
