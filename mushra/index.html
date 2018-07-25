@@ -46,7 +46,7 @@
     Previous
 </a>
 
-<h1 class='title'>MUSHRA</h1>
+<h1 class='title'>Listening test</h1>
 
 <a
     href="https://tichter.github.io/raphaellisten/"
@@ -111,7 +111,10 @@
 
 <!-- Main layout -->
 <div data-role="main" class="ui-content">
-<p>Welcome to the MUltiple Stimuli with Hidden Reference and Anchor (MUSHRA) interface.</p>
+<p>Welcome to the interface. You can listen to the songs by clicking on the sliders. Move the sliders according to the quality.
+To guide your decision there are labels over the sliders.</p>
+
+<p>When you are done press next.</p>
 
 
 
@@ -158,9 +161,9 @@
   $('#id-mushra').on('pageshow', function () {
 
       if ('mushra' === 'soundboard')
-        window.listen.createSoundboard('{"continuous_playback":true,"loop_playback":true,"randomise_slider_handle":true,"randomise_sounds_within_page":true,"randomise_pages":true,"show_number_on_slider":true,"must_play_all_samples_to_continue":false,"back_button_can_exit_test":true,"add_consistency_check":false,"allow_submission":true,"allow_slider_sort":true,"labels":["Bad","Poor","Fair","Good","Excellent"],"pages":[{"name":"Set 1","references":[{"button_label":"Reference 12","url":"sounds/dog1.wav"},{"button_label":"Reference 2","url":"sounds/dog2.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog1.wav"},{"name":1,"url":"sounds/dog2.wav"},{"name":2,"url":"sounds/dog3.wav"},{"name":3,"url":"sounds/dog4.wav"}]},{"name":"Set 2","references":[{"button_label":"Reference2","url":"sounds/dog4.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog4.wav"},{"name":1,"url":"sounds/dog5.wav"},{"name":2,"url":"sounds/dog6.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
+        window.listen.createSoundboard('{"continuous_playback":true,"loop_playback":true,"randomise_slider_handle":true,"randomise_sounds_within_page":true,"randomise_pages":true,"show_number_on_slider":true,"must_play_all_samples_to_continue":false,"back_button_can_exit_test":true,"add_consistency_check":false,"allow_submission":true,"allow_slider_sort":true,"labels":["Bad","Poor","Fair","Good","Excellent"],"pages":[{"name":"Set 1","sounds":[{"name":0,"url":"sounds/dog1.wav"},{"name":1,"url":"sounds/dog2.wav"},{"name":2,"url":"sounds/dog3.wav"},{"name":3,"url":"sounds/dog4.wav"},{"name":4,"url":"sound/dog5.wav"}]},{"name":"Set 2","references":[{"button_label":"Reference2","url":"sounds/dog4.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog4.wav"},{"name":1,"url":"sounds/dog5.wav"},{"name":2,"url":"sounds/dog6.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
       else if ('mushra' === 'mushra')
-        window.listen.createMUSHRA('{"continuous_playback":true,"loop_playback":true,"randomise_slider_handle":true,"randomise_sounds_within_page":true,"randomise_pages":true,"show_number_on_slider":true,"must_play_all_samples_to_continue":false,"back_button_can_exit_test":true,"add_consistency_check":false,"allow_submission":true,"allow_slider_sort":true,"labels":["Bad","Poor","Fair","Good","Excellent"],"pages":[{"name":"Set 1","references":[{"button_label":"Reference 12","url":"sounds/dog1.wav"},{"button_label":"Reference 2","url":"sounds/dog2.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog1.wav"},{"name":1,"url":"sounds/dog2.wav"},{"name":2,"url":"sounds/dog3.wav"},{"name":3,"url":"sounds/dog4.wav"}]},{"name":"Set 2","references":[{"button_label":"Reference2","url":"sounds/dog4.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog4.wav"},{"name":1,"url":"sounds/dog5.wav"},{"name":2,"url":"sounds/dog6.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
+        window.listen.createMUSHRA('{"continuous_playback":true,"loop_playback":true,"randomise_slider_handle":true,"randomise_sounds_within_page":true,"randomise_pages":true,"show_number_on_slider":true,"must_play_all_samples_to_continue":false,"back_button_can_exit_test":true,"add_consistency_check":false,"allow_submission":true,"allow_slider_sort":true,"labels":["Bad","Poor","Fair","Good","Excellent"],"pages":[{"name":"Set 1","sounds":[{"name":0,"url":"sounds/dog1.wav"},{"name":1,"url":"sounds/dog2.wav"},{"name":2,"url":"sounds/dog3.wav"},{"name":3,"url":"sounds/dog4.wav"},{"name":4,"url":"sound/dog5.wav"}]},{"name":"Set 2","references":[{"button_label":"Reference2","url":"sounds/dog4.wav"}],"sounds":[{"name":"Ref","url":"sounds/dog4.wav"},{"name":1,"url":"sounds/dog5.wav"},{"name":2,"url":"sounds/dog6.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
   })
 </script>
 
