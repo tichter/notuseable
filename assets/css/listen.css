@@ -92,6 +92,14 @@ div.ui-content {
   text-align: right;
   color: #19CCAA; }
 
+.soundboard-container {
+  text-align: center;
+  margin: 0px auto;
+  display: table;
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden; }
+
 #submit-container {
   text-align: center;
   margin: auto;
