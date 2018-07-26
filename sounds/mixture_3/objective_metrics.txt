@@ -1,0 +1,11 @@
+
+Method 1:
+	MSE = 1447.96 / L1 = 814.16 / SDR = 5.63
+Method 2:
+	MSE = 1529.90 / L1 = 673.00 / SDR = 7.00
+Method 3:
+	MSE = 1562.54 / L1 = 732.40 / SDR = 6.28
+Method 4:
+	MSE = 1161.17 / L1 = 972.20 / SDR = 4.38
+Method 5:
+	MSE = 1411.77 / L1 = 803.42 / SDR = 5.78
