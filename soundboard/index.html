@@ -46,7 +46,7 @@
     Previous
 </a>
 
-<h1 class='title'>Soundboard</h1>
+<h1 class='title'>Instructions</h1>
 
 <a
     href="https://tichter.github.io/raphaellisten/mushra/"
@@ -111,9 +111,27 @@
 
 <!-- Main layout -->
 <div data-role="main" class="ui-content">
-<h1 id="examples">Examples</h1>
+<h1 id="rating-the-naturalness">Rating the naturalness:</h1>
+<p>Your task is to rate the <strong>naturalness</strong> of different audio clips.</p>
 
-<p>Below you can find two examples of what naturalness means. Original shows what was intended to get and bad shows a version of the same sound that is considered as unnatural or bad.</p>
+<p>By natural sounds, we mean sounds realistically produced by some musical instruments
+(including the voice!). In contrast, un-natural sounds may contain distortions, artifacts,
+or may sound computer-generated.</p>
+
+<p>Please listen to the four audio clips below, illustrating what we mean by naturalness.
+The left-most two snippets would be deemed natural, while the right-most two wouldn’t.</p>
+
+<p>#How to rate:</p>
+
+<p>There are 5 audio snippets per page. Your task is to <em>rank</em> these 5 clips from 1 (best) to 5 (worse)
+according to their naturalness. Please use all 5 digits. If there is a tie (multiple clips judged equal),
+just decide on a rank.</p>
+
+<p>An example is shown below.</p>
+
+<p><em>Note:</em> Please use good-quality headphones. You can borrow one from me if necessary!</p>
+
+<p>Press Next in the top right corner to start the experiment.</p>
 
 
 
@@ -122,35 +140,25 @@
 
 
 
-<p> Example 1 </p>
+<p> Examples </p>
 
 <li>
 
 
 
-<button class="soundboard-play" data-inline="true">Original</button>
+<button class="soundboard-play" data-inline="true">Natural</button>
 
 
 
-<button class="soundboard-play" data-inline="true">Bad</button>
+<button class="soundboard-play" data-inline="true">Natural</button>
 
 
 
-</li>
+<button class="soundboard-play" data-inline="true">Un-natural</button>
 
 
 
-<p> Example 2 </p>
-
-<li>
-
-
-
-<button class="soundboard-play" data-inline="true">Original</button>
-
-
-
-<button class="soundboard-play" data-inline="true">Bad</button>
+<button class="soundboard-play" data-inline="true">Un-natural</button>
 
 
 
@@ -173,9 +181,9 @@
   $('#id-soundboard').on('pageshow', function () {
 
       if ('soundboard' === 'soundboard')
-        window.listen.createSoundboard('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Example 1","sounds":[{"button_label":"Original","url":"sounds/dog1.wav"},{"button_label":"Bad","url":"sounds/dog2.wav"}]},{"name":"Example 2","sounds":[{"button_label":"Original","url":"sounds/dog4.wav"},{"button_label":"Bad","url":"sounds/dog5.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
+        window.listen.createSoundboard('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
       else if ('soundboard' === 'mushra')
-        window.listen.createMUSHRA('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Example 1","sounds":[{"button_label":"Original","url":"sounds/dog1.wav"},{"button_label":"Bad","url":"sounds/dog2.wav"}]},{"name":"Example 2","sounds":[{"button_label":"Original","url":"sounds/dog4.wav"},{"button_label":"Bad","url":"sounds/dog5.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
+        window.listen.createMUSHRA('{"back_button_can_exit_test":true,"continuous_playback":true,"loop_playback":true,"rows":[{"name":"Examples","sounds":[{"button_label":"Natural","url":"sounds/examples/example_groundtruth.wav"},{"button_label":"Natural","url":"sounds/examples/example_interference_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_artifacts_anchor.wav"},{"button_label":"Un-natural","url":"sounds/examples/example_distortion_anchor.wav"}]}]}', 'https://tichter.github.io/raphaellisten')
   })
 </script>
 
